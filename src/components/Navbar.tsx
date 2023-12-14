@@ -27,7 +27,7 @@ const Navbar = () => {
                 <a className="btn btn-ghost text-xl">Client Management System</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 space-x-2">
                     <li><Link href="/">Home</Link></li>
                     {/* <li>
                         <details>
@@ -42,8 +42,9 @@ const Navbar = () => {
                     <li><Link href="/registration">Registration</Link></li>
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">My Profile</a>
+            <div className="navbar-end space-x-2">
+                <a className="btn">Profile</a>
+                <a className="btn">Log Out</a>
             </div>
         </div>
     );
