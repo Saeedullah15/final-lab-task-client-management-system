@@ -42,10 +42,17 @@ const Navbar = () => {
                     <li><Link href="/registration">Registration</Link></li>
                 </ul>
             </div>
-            <div className="navbar-end space-x-2">
-                <a className="btn">Profile</a>
-                <a className="btn">Log Out</a>
+            <div className="navbar-end hidden lg:flex">
+                <ul className="px-1 space-x-2">
+                    <li className='btn'><Link href="/profile">My Profile</Link></li>
+                    <li className='btn'><Link href="">Log Out</Link></li>
+                </ul>
             </div>
+            {/* <div className="navbar-end space-x-2">
+                <li><Link href="/profile">My Profile</Link></li>
+                <a href='/profile' className="btn">Profile</a>
+                <a className="btn">Log Out</a>
+            </div> */}
         </div>
     );
 };
